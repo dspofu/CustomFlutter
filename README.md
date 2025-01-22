@@ -1,5 +1,7 @@
 # CustomFlutter -> Componests
 
+### Pasta com os componentes modificados: `lib/modules` 📂
+
 # Lembretes
 
 > Evite em alterar algo nesse diretorio: **`android\app\src\main\res`**
