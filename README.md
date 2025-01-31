@@ -1,17 +1,17 @@
-# CustomFlutter -> Componests
+# CustomFlutter -> Components
 
-### Pasta com os componentes modificados: `lib/modules` 📂
+### Folder with modified components: `lib/modules` 📂
 
 <details>
-<summary style="font-size: 22px">Lembretes basicos</summary>
+<summary style="font-size: 22px">Basic reminders 👈</summary>
 <br>
 
-> Evite em alterar algo nesse diretorio: **`android\app\src\main\res`**
+> Avoid modifying anything in this directory: **`android\app\src\main\res`**
 
-### Controle do Widget
+### Widget Control
 
-- Usando o **StateFulWidget**
-> StateFul é uma widget voltada a estrutura que receberá atualizações.
+- Using **StateFulWidget**  
+> StateFul is a widget designed for structures that will receive updates.
 ```dart
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -21,8 +21,8 @@ class MyApp extends StatefulWidget {
 }
 ```
 # 
-- Usando o **StateLessWidget**
-> StateLess é uma widget voltada a estrutura que permacene sempre constante.
+- Using **StateLessWidget**
+> StateLess is a widget designed for structures that remain constant.
 ```dart
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -36,11 +36,11 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-## Gerenciador de pacotes
+## Package Manager
 
-O `pubspec.yaml` é um arquivo essencial para o projeto **Flutter**. Ele serve para especificar as configurações do projeto, tais como de **versão**, **pacotes** e dentre outras para formatação. 
+The `pubspec.yaml` file is essential for a **Flutter** project. It specifies the project's configurations, such as **version**, **packages**, and other formatting settings.
 ```yaml
-name: nome_do_projeto
+name: project_name
 version: 1.0.0
 
 dependencies:
@@ -58,80 +58,90 @@ flutter:
 ```
 </details>
 
-## Tipos de operadores logicos
+## Types of Logical Operators
 
-## Operadores aritméticos: Realizam operações matemáticas básicas.
+## Arithmetic Operators: Perform basic mathematical operations.
 
-`-` : Subtração<br>
-`-expr` : Inversão (Reverte os sinais de uma expressão)<br>
-`*` : Multiplicação<br>
-`/` : Divisão<br>
-`~/` : Divisão que retorna apenas a parte inteira do resultado<br>
-`%` : Módulo (resto de divisão)<br>
-`++var` : Incremento<br>
-`--var` : Decremento<br>
-## Operadores relacionais: Comparam dois valores.<br>
-`>` : Maior que<br>
-`<` : Menor que<br>
-`>=` : Maior ou igual a<br>
-`<=` : Menor ou igual a<br>
-`==` : Igual a<br>
-`!=` : Diferente de<br>
-## Operadores de atribuição: Atribuem valor a uma variável.<br>
-`=` : Atribuição<br>
-`+=` : Adição e atribuição<br>
-`-=` : Subtração e atribuição<br>
-`*=` : Multiplicação e atribuição<br>
-`/=` : Divisão e atribuição<br>
-`~/=` : Divisão inteira e atribuição<br>
-`%=` : Módulo e atribuição<br>
-## Operadores lógicos: Realizam operações lógicas (AND, OR, NOT).<br>
-`&&` : AND lógico<br>
-`||` : OR lógico<br>
-`!` : NOT lógico<br>
-## Operadores bit a bit: Realizam operações bit a bit.<br>
-`&` : AND bit a bit<br>
-`|` : OR bit a bit<br>
-`^` : XOR bit a bit<br>
-`~` : NOT bit a bit<br>
-`<<` : Deslocamento para a esquerda<br>
-`>>` : Deslocamento para a direita<br>
-## Outros operadores:<br>
-`??` : Operador if-null<br>
-`?.` : Operador de acesso seguro a membros<br>
-`..` : Operador de cascata<br>
-`?..` : Operador de cascata nula<br>
-`...` : Operador de propagação<br>
-`...?` : Operador de propagação nula<br>
+`-` : Subtraction<br>
+`-expr` : Negation (Reverses the signs of an expression)<br>
+`*` : Multiplication<br>
+`/` : Division<br>
+`~/` : Division that returns only the integer part of the result<br>
+`%` : Modulo (remainder of division)<br>
+`++var` : Increment<br>
+`--var` : Decrement
+
+## Relational Operators: Compare two values.
+
+`>` : Greater than<br>
+`<` : Less than<br>
+`>=` : Greater than or equal to<br>
+`<=` : Less than or equal to<br>
+`==` : Equal to<br>
+`!=` : Not equal to
+
+## Assignment Operators: Assign values to variables.
+
+`=` : Assignment<br>
+`+=` : Addition and assignment<br>
+`-=` : Subtraction and assignment<br>
+`*=` : Multiplication and assignment<br>
+`/=` : Division and assignment<br>
+`~/=` : Integer division and assignment<br>
+`%=` : Modulo and assignment
+
+## Logical Operators: Perform logical operations (AND, OR, NOT).
+
+`&&` : Logical AND<br>
+`||` : Logical OR<br>
+`!` : Logical NOT
+
+## Bitwise Operators: Perform bitwise operations.
+
+`&` : Bitwise AND<br>
+`|` : Bitwise OR<br>
+`^` : Bitwise XOR<br>
+`~` : Bitwise NOT<br>
+`<<` : Left shift<br>
+`>>` : Right shift
+
+## Other Operators:
+
+`??` : If-null operator<br>
+`?.` : Safe member access operator<br>
+`..` : Cascade operator<br>
+`?..` : Null-aware cascade operator<br>
+`...` : Spread operator<br>
+`...?` : Null-aware spread operator
 
 <details>
-<summary style="font-size: 20px">Comandos basicos <a href=""><img src="https://cdn-icons-png.flaticon.com/512/10381/10381760.png" width="30px"></a></summary>
+<summary style="font-size: 20px">Basic Commands 👈</summary>
 <br>
 
-> Comando para **buscar atualizações do flutter**<br>
-Comando para **registrar novo icone** antes do build<br>
-Comando para realizar **build padrão para Android**<br>
-Comando para realizar **build para Android gerando 3 arquivos para celulares com<br> arquiteturas diferentes `x64`, `x86` e `para ambas arquiteturas`**
-Comando para realizar **build com codigo fonte criptografado**<br>
+> **Command to fetch Flutter updates**<br>
+**Command to register a new icon before building**<br>
+**Command to perform a standard build for Android**<br>
+**Command to build for Android, generating 3 files for phones with different architectures: `x64`, `x86`, and `both architectures**`**<br>
+**Command to build with obfuscated source code**
 
 `flutter pub get`<br>
-`flutter pub run flutter_launcher_icons:main` ou `dart run flutter_launcher_icons:main`<br>
+`flutter pub run flutter_launcher_icons:main` or `dart run flutter_launcher_icons:main`<br>
 `flutter build apk --release`<br>
 `flutter build apk --split-per-abi`<br>
 `flutter build apk --obfuscate`
 </details>
 
-## Configurações opcionais - Visual Studio Code
+## Optional Settings - Visual Studio Code
 
-**Arquivo de configurações do VSCode:** `settings.json`<br>
-Configuração para `dart` junto ao pacote flutter
+**VSCode settings file:** `settings.json`<br>
+Configuration for `dart` along with the Flutter package
 
 ```json
 "[dart]": {
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.rulers": [
-    /*Manter comentado faz tirar linha de exibição lateral*/
+    /*Keeping this commented removes the vertical display line*/
     // 80 
   ],
   "editor.selectionHighlight": false,
