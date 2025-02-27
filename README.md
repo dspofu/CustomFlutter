@@ -62,73 +62,74 @@ flutter:
 
 ## Arithmetic Operators: Perform basic mathematical operations.
 
-`-` : Subtraction<br>
-`-expr` : Negation (Reverses the signs of an expression)<br>
-`*` : Multiplication<br>
-`/` : Division<br>
-`~/` : Division that returns only the integer part of the result<br>
-`%` : Modulo (remainder of division)<br>
-`++var` : Increment<br>
-`--var` : Decrement
+`-` Subtraction<br>
+`-expr` Negation (Reverses the signs of an expression)<br>
+`*` Multiplication<br>
+`/` Division<br>
+`~/` Division that returns only the integer part of the result<br>
+`%` Modulo (remainder of division)<br>
+`++var` Increment<br>
+`--var` Decrement
 
 ## Relational Operators: Compare two values.
 
-`>` : Greater than<br>
-`<` : Less than<br>
-`>=` : Greater than or equal to<br>
-`<=` : Less than or equal to<br>
-`==` : Equal to<br>
-`!=` : Not equal to
+`>` Greater than<br>
+`<` Less than<br>
+`>=` Greater than or equal to<br>
+`<=` Less than or equal to<br>
+`==` Equal to<br>
+`!=` Not equal to
 
 ## Assignment Operators: Assign values to variables.
 
-`=` : Assignment<br>
-`+=` : Addition and assignment<br>
-`-=` : Subtraction and assignment<br>
-`*=` : Multiplication and assignment<br>
-`/=` : Division and assignment<br>
-`~/=` : Integer division and assignment<br>
-`%=` : Modulo and assignment
+`=` Assignment<br>
+`+=` Addition and assignment<br>
+`-=` Subtraction and assignment<br>
+`*=` Multiplication and assignment<br>
+`/=` Division and assignment<br>
+`~/=` Integer division and assignment<br>
+`%=` Modulo and assignment
 
 ## Logical Operators: Perform logical operations (AND, OR, NOT).
 
-`&&` : Logical AND<br>
-`||` : Logical OR<br>
-`!` : Logical NOT
+`&&` Logical AND<br>
+`||` Logical OR<br>
+`!` Logical NOT
 
 ## Bitwise Operators: Perform bitwise operations.
 
-`&` : Bitwise AND<br>
-`|` : Bitwise OR<br>
-`^` : Bitwise XOR<br>
-`~` : Bitwise NOT<br>
-`<<` : Left shift<br>
-`>>` : Right shift
+`&` Bitwise AND<br>
+`|` Bitwise OR<br>
+`^` Bitwise XOR<br>
+`~` Bitwise NOT<br>
+`<<` Left shift<br>
+`>>` Right shift
 
 ## Other Operators:
 
-`??` : If-null operator<br>
-`?.` : Safe member access operator<br>
-`..` : Cascade operator<br>
-`?..` : Null-aware cascade operator<br>
-`...` : Spread operator<br>
-`...?` : Null-aware spread operator
+`??` If-null operator<br>
+`?.` Safe member access operator<br>
+`..` Cascade operator<br>
+`?..` Null-aware cascade operator<br>
+`...` Spread operator<br>
+`...?` Null-aware spread operator
 
 <details>
 <summary style="font-size: 20px">Basic Commands 👈</summary>
 <br>
 
-> **Command to fetch Flutter updates**<br>
-**Command to register a new icon before building**<br>
-**Command to perform a standard build for Android**<br>
-**Command to build for Android, generating 3 files for phones with different architectures: `x64`, `x86`, and `both architectures**`**<br>
-**Command to build with obfuscated source code**
-
-`flutter pub get`<br>
-`flutter pub run flutter_launcher_icons:main` or `dart run flutter_launcher_icons:main`<br>
-`flutter build apk --release`<br>
-`flutter build apk --split-per-abi`<br>
-`flutter build apk --obfuscate`
+**Commands to `terminal`/`cmd`**
+```dart
+flutter pub add // Install libs in project
+flutter pub get // Get library updates or install libraries from "pubspec.yaml"
+flutter upgrade // Fetch Flutter updates 
+flutter pub run flutter_launcher_icons:main OR dart run flutter_launcher_icons:main // Register a new icon before building (lib required "flutter_launcher_icons")
+flutter build apk --release // Perform a standard build for Android
+flutter build apk --split-per-abi // Build for Android, generating 3 files for phones with different architectures: "x64", "x86", and "both architectures"
+flutter build apk --obfuscate // Build with obfuscated source code
+flutter create . // Repair your project folder
+flutter run // Initialize project
+```
 </details>
 
 ## Optional Settings - Visual Studio Code
